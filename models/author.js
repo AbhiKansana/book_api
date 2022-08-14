@@ -1,8 +1,12 @@
 const mongoose = require('mongoose')
 
 const authorSchema = mongoose.Schema({
-    author:{
+    name:{
         type:String,
+        required:true
+    },
+    age:{
+        type:Number,
         required:true
     }
 })
